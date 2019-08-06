@@ -1,0 +1,13 @@
+<h1>Filteration</h1>
+<input type="text"  [(ngModel)]="query" />
+
+<ul>
+        <li *ngFor="let lock of locked | filter: query">
+            {{lock.name}},       
+            {{lock.ClassRoom}},       
+            {{lock.urdu}},      
+            {{lock.umarks}},            
+            {{lock.english}},         
+            {{lock.emarks}}              
+            </li>
+</ul>
